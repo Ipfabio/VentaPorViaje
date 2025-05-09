@@ -36,5 +36,5 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000; /* Asegura que quede por encima del contenido */
-    box-shadow: 0 2px 4px rgba(230, 201, 201, 0.5); /* Sombra blanco-gris */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5); /* Sombra blanco-gris */
 }
