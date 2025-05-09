@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venta por Mudanza</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../public/images/favicon.ico" />
+
+
+   <header class="w-full flex items-center justify-start px-6 py-4 bg-white shadow-md">
+      <a href="#contacto">
+        <img src="../public/images/Logo.jpg" alt="Venta por Mudanza" 
+         class="w-12 h-12 rounded-full border-2 border-indigo-700 shadow-sm hover:scale-105 transition-transform duration-300" />
+    </a>
+    </header>
+
+
+
+  <!-- Header -->
+  <header class="bg-indigo-950 text-white py-4 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Venta por Mudanza</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#cocina" class="hover:underline">Cocina</a>
+        <a href="#living" class="hover:underline">Living</a>
+        <a href="#oficina" class="hover:underline">Oficina</a>
+        <a href="#pieza" class="hover:underline">Pieza</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Filtro por categoría y precio -->
+  <section class="max-w-6xl mx-auto px-4 py-6">
+    <h2 class="text-xl font-semibold mb-4">Filtrar productos</h2>
+    <div class="flex flex-wrap gap-4">
+      <select class="p-2 rounded bg-white border">
+        <option value="">Categoría</option>
+        <option value="cocina">Cocina</option>
+        <option value="living">Living</option>
+        <option value="oficina">Oficina</option>
+        <option value="pieza">Pieza</option>
+      </select>
+      <select class="p-2 rounded bg-white border">
+        <option value="">Precio</option>
+        <option value="0-10000">Menos de $10.000</option>
+        <option value="10000-30000">$10.000 a $30.000</option>
+        <option value="30000-100000">Más de $30.000</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Sección Cocina -->
+  <section id="cocina" class="max-w-6xl mx-auto px-4 py-6">
+    <h2 class="text-2xl font-bold text-indigo-800 mb-4">Cocina</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Tarjeta de producto -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="https://via.placeholder.com/400x250" alt="Freidora" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Freidora Cecotec</h3>
+          <p class="text-indigo-700 font-bold text-xl">$35.000</p>
+        </div>
+      </div>
+      <!-- Más tarjetas... -->
+    </div>
+  </section>
+
+  <!-- Sección Living -->
+<section id="living" class="max-w-6xl mx-auto px-4 py-6">
+  <h2 class="text-2xl font-bold text-indigo-800 mb-4">Living</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="https://via.placeholder.com/400x250" alt="Sillón" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Sillón 2 cuerpos</h3>
+        <p class="text-indigo-700 font-bold text-xl">$45.000</p>
+      </div>
+    </div>
+    <!-- Más tarjetas... -->
+  </div>
+</section>
+
+<!-- Sección Oficina -->
+<section id="oficina" class="max-w-6xl mx-auto px-4 py-6">
+  <h2 class="text-2xl font-bold text-indigo-800 mb-4">Oficina</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="https://via.placeholder.com/400x250" alt="Escritorio" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Escritorio madera</h3>
+        <p class="text-indigo-700 font-bold text-xl">$30.000</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Pieza -->
+<section id="pieza" class="max-w-6xl mx-auto px-4 py-6">
+  <h2 class="text-2xl font-bold text-indigo-800 mb-4">Pieza</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="https://via.placeholder.com/400x250" alt="Cama" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Cama individual</h3>
+        <p class="text-indigo-700 font-bold text-xl">$20.000</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Información de Contacto y Mapa -->
+<section id="contacto" class="bg-indigo-100 mt-10 py-8">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+    
+    <!-- Contacto -->
+    <div>
+      <h3 class="text-xl font-bold text-indigo-800 mb-4">Contacto</h3>
+      <ul class="space-y-2">
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/5491123456789" target="_blank" class="text-indigo-700 underline">+54 9 11 2345-6789</a></li>
+        <li><strong>Email:</strong> <a href="mailto:ventas@mudanza.com" class="text-indigo-700 underline">ventas@mudanza.com</a></li>
+      </ul>
+      <form class="mt-4 space-y-3">
+        <input type="text" placeholder="Tu nombre" class="w-full p-2 border rounded" required />
+        <input type="email" placeholder="Tu email" class="w-full p-2 border rounded" required />
+        <textarea placeholder="Mensaje..." class="w-full p-2 border rounded" required></textarea>
+        <button type="submit" class="bg-indigo-700 text-white px-4 py-2 rounded hover:bg-indigo-800">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Ubicación -->
+    <div>
+      <h3 class="text-xl font-bold text-indigo-800 mb-4">Zona de Entrega</h3>
+      <div class="w-full h-64 rounded-xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.387594130742!2d-58.4173093!3d-34.6183437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM3JzA2LjAiUyA1OMKwMjUnMDIuMiJX!5e0!3m2!1ses!2sar!4v1586000000000" 
+          width="100%" 
+          height="100%" 
+          frameborder="0" 
+          style="border:0;" 
+          allowfullscreen="" 
+          aria-hidden="false" 
+          tabindex="0">
+        </iframe>
+      </div>
+      <p class="text-sm mt-2 text-gray-600">Zona aproximada. Al comunicarte se comparte ubicación exacta.</p>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
