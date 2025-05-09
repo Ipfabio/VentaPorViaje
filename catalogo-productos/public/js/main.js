@@ -45,3 +45,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+document.getElementById("filtroCategoria").addEventListener("change", aplicarFiltros);
+document.getElementById("filtroPrecio").addEventListener("change", aplicarFiltros);
+
+function aplicarFiltros() {
+  const categoriaSeleccionada = document.getElementById("filtroCategoria").value;
+  const precioSeleccionado = document.getElementById("filtroPrecio").value;
+
+  const tarjetas = document.querySelectorAll("[data-categoria]");
+
+  tarjetas.forEach((tarjeta) => {
+    const categoria = tarjeta.dataset.categoria;
+    const precio = parseInt(tarjeta.dataset.precio);
+
+    const coincideCategoria = categoriaSeleccionada === "todas" || categoria === categoriaSeleccionada;
+    
+    let coincidePrecio = true;
+    if (precioSeleccionado !== "todos") {
+      const [min, max] = precioSeleccionado.split("-");
+      if (max === "mas") {
+        coincidePrecio = precio > parseInt(min);
+      } else {
+        coincidePrecio = precio >= parseInt(min) && precio <= parseInt(max);
+      }
+    }
+
+    if (coincideCategoria && coincidePrecio) {
+      tarjeta.classList.remove("hidden");
+    } else {
+      tarjeta.classList.add("hidden");
+    }
+  });
+}
