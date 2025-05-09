@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     secciones[producto.categoria].appendChild(tarjeta);
 
-    // Inicializar Swiper individualmente
+    // Inicializar Swiper
     new Swiper(`#${sliderID}`, {
       loop: true,
       navigation: {
