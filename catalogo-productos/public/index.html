@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Venta por Mudanza</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../public/images/favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
 
     <header class="bg-white shadow-md">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -17,7 +19,7 @@
         <!-- Logo + Título -->
         <div class="flex items-center space-x-3">
         <a href="#contacto">
-            <img src="../public/images/Logo.jpg" alt="Venta por Mudanza"
+            <img src="images/Logo.jpg" alt="Venta por Mudanza"
                 class="w-12 h-12 rounded-full border-2 border-indigo-700 shadow-sm hover:scale-105 transition-transform duration-300" />
         </a>
         <h1 class="text-2xl font-bold text-gray-900">Venta por Mudanza</h1>
@@ -61,16 +63,16 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
             <!-- AQUÍ VA UNA TARJETA -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden group relative">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden group relative transition-transform hover:scale-105 hover:shadow-2x1 duration-300">
                 <!-- Slider -->
                 <div class="relative w-full h-48 overflow-hidden">
                     <div class="swiper producto-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="https://via.placeholder.com/400x250" class="w-full h-48 object-cover" alt="Producto">
+                                <img src="../public/images/cocina/Freidora De Aire Sin Aceite Cecotec Bombastik Full 6l 1700w Color Negro/Freidora De Aire Sin Aceite Cecotec Bombastik Full 6l 1700w Color Negro.png" class="w-full h-48 object-cover" alt="Producto">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://via.placeholder.com/400x250/cccccc" class="w-full h-48 object-cover" alt="Producto alternativo">
+                                <img src="../public/images/cocina/Freidora De Aire Sin Aceite Cecotec Bombastik Full 6l 1700w Color Negro/Freidora De Aire Sin Aceite Cecotec Bombastik Full 6l 1700w Color Negro- Ejemplo.png" class="w-full h-48 object-cover" alt="Producto alternativo">
                             </div>
                         </div>
                         <div class="swiper-button-next"></div>
@@ -174,6 +176,11 @@
   </div>
 </section>
 
+<!-- Swiper JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Tu script personalizado -->
+<script src="js/main.js"></script>
 
 </body>
 </html>
