@@ -8,23 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
     pieza: document.querySelector("#pieza .grid"),
   };
 
+  const mensajeTextarea = document.querySelector("#contacto textarea");
+
   productos.forEach((producto) => {
-    const sliderID = `swiper-${producto.id}`;
     const tarjeta = document.createElement("div");
-    tarjeta.className = "bg-white rounded-xl shadow-lg overflow-hidden group relative transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl";
+    tarjeta.className = "card bg-white rounded-xl shadow-lg overflow-hidden group relative transform transition-transform duration-300";
 
     tarjeta.innerHTML = `
       <div class="relative w-full h-48 overflow-hidden">
-        <div class="swiper producto-slider" id="${sliderID}">
-          <div class="swiper-wrapper">
-            ${producto.imagenes.map(src => `
-              <div class="swiper-slide">
-                <img src="${src}" class="w-full h-48 object-cover" alt="${producto.nombre}">
-              </div>`).join('')}
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
+        <img src="${producto.imagenes[0]}" class="w-full h-48 object-cover" alt="${producto.nombre}">
       </div>
       <div class="p-4">
         <h3 class="font-semibold text-lg">${producto.nombre}</h3>
@@ -33,16 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
-    secciones[producto.categoria].appendChild(tarjeta);
-
-    // Inicializar Swiper
-    new Swiper(`#${sliderID}`, {
-      loop: true,
-      navigation: {
-        nextEl: `#${sliderID} .swiper-button-next`,
-        prevEl: `#${sliderID} .swiper-button-prev`,
-      },
+    // Agregar evento de clic para insertar el nombre del producto en el mensaje
+    tarjeta.addEventListener("click", () => {
+      const textoActual = mensajeTextarea.value;
+      const textoProducto = `Estoy interesado en el producto: ${producto.nombre}`;
+      mensajeTextarea.value = textoActual ? `${textoActual}\n${textoProducto}` : textoProducto;
+      mensajeTextarea.focus(); // Enfocar el textarea
     });
+
+    secciones[producto.categoria].appendChild(tarjeta);
   });
 });
 
