@@ -38,3 +38,21 @@ header {
     z-index: 1000; /* Asegura que quede por encima del contenido */
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5); /* Sombra blanco-gris */
 }
+
+/* Estilos para el modal */
+#modal {
+    display: none;
+}
+
+#modal.hidden {
+    display: none;
+}
+
+#modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#modal-close {
+    cursor: pointer;
+}
