@@ -11,12 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const mensajeTextarea = document.querySelector("#contacto textarea");
 
   productos.forEach((producto) => {
+    const sliderID = `swiper-${producto.id}`;
     const tarjeta = document.createElement("div");
     tarjeta.className = "card bg-white rounded-xl shadow-lg overflow-hidden group relative transform transition-transform duration-300";
 
     tarjeta.innerHTML = `
       <div class="relative w-full h-48 overflow-hidden">
-        <img src="${producto.imagenes[0]}" class="w-full h-48 object-cover" alt="${producto.nombre}">
+        <div class="swiper producto-slider" id="${sliderID}">
+          <div class="swiper-wrapper">
+            ${producto.imagenes.map(src => `
+              <div class="swiper-slide">
+                <img src="${src}" class="w-full h-48 object-cover cursor-pointer" alt="${producto.nombre}">
+              </div>`).join('')}
+          </div>
+          <!-- Flechas de navegación -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
       <div class="p-4">
         <h3 class="font-semibold text-lg">${producto.nombre}</h3>
@@ -25,15 +36,26 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
-    // Agregar evento de clic para insertar el nombre del producto en el mensaje
-    tarjeta.addEventListener("click", () => {
-      const textoActual = mensajeTextarea.value;
-      const textoProducto = `Estoy interesado en el producto: ${producto.nombre}`;
-      mensajeTextarea.value = textoActual ? `${textoActual}\n${textoProducto}` : textoProducto;
-      mensajeTextarea.focus(); // Enfocar el textarea
+    // Agregar evento de clic solo a las imágenes
+    tarjeta.querySelectorAll(".swiper-slide img").forEach((img) => {
+      img.addEventListener("click", () => {
+        const textoActual = mensajeTextarea.value;
+        const textoProducto = `Estoy interesado en el producto: ${producto.nombre}`;
+        mensajeTextarea.value = textoActual ? `${textoActual}\n${textoProducto}` : textoProducto;
+        mensajeTextarea.focus(); // Enfocar el textarea
+      });
     });
 
     secciones[producto.categoria].appendChild(tarjeta);
+
+    // Inicializar Swiper para cada tarjeta
+    new Swiper(`#${sliderID}`, {
+      loop: true,
+      navigation: {
+        nextEl: `#${sliderID} .swiper-button-next`,
+        prevEl: `#${sliderID} .swiper-button-prev`,
+      },
+    });
   });
 });
 
