@@ -57,14 +57,49 @@ header {
   transform: scale(1.05); /* Agranda la imagen un 5% */
 }
 
+/* Estilo base de las tarjetas */
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 0.5rem; /* Bordes redondeados */
+  width: 100%;
+  height: auto;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Estilo para tarjetas expandidas */
+.card.expanded {
+  height: auto; /* Ajusta la altura automáticamente al contenido */
+}
+
+/* Detalles ocultos por defecto */
+.details {
+  display: none;
+}
+
+/* Mostrar detalles al expandir */
+.card.expanded .details {
+  display: block;
+}
+
+/* Botón de carrito */
+.add-to-cart {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #4f46e5; /* Indigo */
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #3730a3; /* Indigo más oscuro */
 }
 
 .card .p-4 {
