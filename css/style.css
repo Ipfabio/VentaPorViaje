@@ -83,21 +83,55 @@ header {
   gap: 2rem; /* Aumentar el espaciado entre las tarjetas */
 }
 
-/* Estilo base de las tarjetas */
+/* Estilo general para las tarjetas */
 .card {
-  position: relative;
-  display: grid;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 28rem; /* Aumentar la altura de las tarjetas */
-  width: 100%; /* Asegura que las tarjetas ocupen todo el espacio disponible en la columna */
-  max-width: 100%; /* Evita que las tarjetas excedan el ancho del contenedor */
+  height: auto; /* Ajusta la altura automáticamente */
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   transition: all 0.3s ease;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+}
+
+/* Ajustar el diseño de la cuadrícula en móviles */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Una tarjeta por fila */
+    gap: 1.5rem; /* Espaciado entre tarjetas */
+  }
+
+  .card img {
+    height: 12rem; /* Ajustar la altura de las imágenes */
+    object-fit: cover; /* Asegura que la imagen se vea bien */
+  }
+
+  .card .p-4 {
+    padding: 1rem;
+  }
+
+  .card .precio {
+    font-size: 1.5rem; /* Aumentar el tamaño del precio */
+    margin-top: 0.5rem;
+    color: #4f46e5; /* Indigo */
+    text-align: left;
+  }
+
+  .card h3 {
+    font-size: 1.25rem; /* Tamaño del título */
+    margin-bottom: 0.5rem;
+  }
+
+  .card p {
+    font-size: 0.875rem; /* Tamaño más pequeño para la descripción */
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* Estilo para tarjetas expandidas */

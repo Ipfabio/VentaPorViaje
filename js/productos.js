@@ -20,8 +20,8 @@ const productos = [
     precio: 150000,
     descripcion: "Licuadora Peabody PE-LN1200 1.5L con jarra de vidrio 220V",
     imagenes: [
+      "images/cocina/Licuadora/Lejos.png",
       "images/cocina/Licuadora/arriba.png",
-      "images/cocina/Licuadora/Lejos.png"
     ]
   },
     {
@@ -31,9 +31,9 @@ const productos = [
     precio: 100000,
     descripcion: "Microondas Samsung m643",
     imagenes: [
+      "images/cocina/microondas/frente.png",
       "images/cocina/microondas/abierto.png",
       "images/cocina/microondas/botonera.png",
-      "images/cocina/microondas/frente.png"
     ]
   },
   {

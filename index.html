@@ -8,6 +8,22 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="icon" type="image/png" href="images/favicon.ico">
+  <style>
+    /* Ajustar el contenedor del mapa */
+    #contacto iframe {
+      width: 100%; /* Ocupa todo el ancho del contenedor */
+      height: auto; /* Ajusta la altura automáticamente */
+      border: 0; /* Elimina bordes */
+      aspect-ratio: 16 / 9; /* Mantiene una proporción de 16:9 */
+    }
+
+    /* Ajustes específicos para pantallas móviles */
+    @media (max-width: 768px) {
+      #contacto iframe {
+        aspect-ratio: 4 / 3; /* Cambia la proporción para pantallas más pequeñas */
+      }
+    }
+  </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
 
@@ -112,3 +128,4 @@
 
 </body>
 </html>
+``` 
