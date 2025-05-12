@@ -122,3 +122,10 @@ header {
   height: 16rem; /* Aumentar la altura de las imágenes */
   transition: transform 300ms ease-in-out; /* Transición para el hover */
 }
+
+/* Ajustar el texto debajo del mapa */
+#contacto p {
+  max-width: 100%; /* Asegura que no sobrepase el contenedor */
+  word-wrap: break-word; /* Permite que las palabras largas se ajusten */
+  text-align: justify; /* Justifica el texto para un mejor diseño */
+}
