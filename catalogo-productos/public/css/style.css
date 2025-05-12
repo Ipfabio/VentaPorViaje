@@ -37,6 +37,12 @@ header, #contacto {
     background-color: #ffffff;
 }
 
+/* Fondo gris más oscuro para la sección de contacto */
+#contacto {
+  background-color: #dbdcdd; /* Gris claro más oscuro */
+  padding: 2rem 0; /* Mantén el espaciado */
+}
+
 /* Títulos de las tarjetas en blanco */
 h2 {
     color: #ffffff !important; /* Blanco */
@@ -128,4 +134,18 @@ header {
   max-width: 100%; /* Asegura que no sobrepase el contenedor */
   word-wrap: break-word; /* Permite que las palabras largas se ajusten */
   text-align: justify; /* Justifica el texto para un mejor diseño */
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #1f2937; /* Gris oscuro */
+  color: #d1d5db; /* Gris claro */
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem; /* Tamaño de texto pequeño */
+  margin-top: 0.5rem; /* Reducir la distancia con la última sección */
+}
+
+footer p {
+  margin: 0;
 }
