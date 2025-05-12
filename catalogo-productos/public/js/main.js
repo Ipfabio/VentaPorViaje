@@ -27,20 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="p-4">
           <h3 class="font-semibold text-lg">${producto.nombre}</h3>
-          <p class="text-gray-600 text-sm mt-2">${producto.descripcion}</p>
-          <p class="text-indigo-700 font-bold text-xl mt-2">$${producto.precio.toLocaleString()}</p>
+          <div class="descripcion">
+            <p class="text-gray-600 text-sm">${producto.descripcion || "Sin descripción disponible"}</p>
+          </div>
+          <div class="precio">
+            <p class="text-indigo-700 font-bold text-xl">${producto.precio ? `$${producto.precio.toLocaleString()}` : "Precio no disponible"}</p>
+          </div>
         </div>
       </div>
     `;
-
     secciones[producto.categoria].appendChild(tarjeta);
-
-    new Swiper(`#swiper-${producto.id}`, {
-      loop: true,
-      navigation: {
-        nextEl: `#swiper-${producto.id} .swiper-button-next`,
-        prevEl: `#swiper-${producto.id} .swiper-button-prev`,
-      },
-    });
   });
 });
