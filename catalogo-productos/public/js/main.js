@@ -13,27 +13,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeModal = document.getElementById("closeModal");
 
   productos.forEach((producto) => {
-    const sliderID = `swiper-${producto.id}`;
     const tarjeta = document.createElement("div");
+    tarjeta.classList.add("card");
     tarjeta.innerHTML = `
-      <div class="card bg-white rounded-xl shadow-lg overflow-hidden group relative transform transition-transform duration-300">
-        <div class="relative w-full h-48 overflow-hidden" onclick="openModal(${producto.id})">
-          <div class="swiper producto-slider" id="${sliderID}">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden group relative transform transition-transform duration-300">
+        <div class="relative w-full h-56 overflow-hidden">
+          <!-- Slider de imágenes -->
+          <div class="swiper producto-slider" id="swiper-${producto.id}">
             <div class="swiper-wrapper">
               ${producto.imagenes.map(src => `
                 <div class="swiper-slide">
-                  <img src="${src}" class="w-full h-48 object-cover" alt="${producto.nombre}">
+                  <img src="${src}" class="w-full h-full object-cover" alt="${producto.nombre}">
                 </div>`).join('')}
             </div>
-            <!-- Flechas de navegación -->
+            <!-- Botones de navegación -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
         </div>
         <div class="p-4">
           <h3 class="font-semibold text-lg">${producto.nombre}</h3>
-          <p class="text-indigo-700 font-bold text-xl">$${producto.precio.toLocaleString()}</p>
-          <button class="add-to-cart" onclick="addToCart(event, '${producto.nombre}')">
+          <p class="text-gray-600 text-sm mt-2">${producto.descripcion}</p>
+          <p class="text-indigo-700 font-bold text-xl mt-2">$${producto.precio.toLocaleString()}</p>
+          <button class="add-to-cart mt-4" onclick="addToCart(event, '${producto.nombre}')">
             🛒 Agregar al carrito
           </button>
         </div>
@@ -43,11 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
     secciones[producto.categoria].appendChild(tarjeta);
 
     // Inicializar Swiper para cada tarjeta
-    new Swiper(`#${sliderID}`, {
+    new Swiper(`#swiper-${producto.id}`, {
       loop: true,
       navigation: {
-        nextEl: `#${sliderID} .swiper-button-next`,
-        prevEl: `#${sliderID} .swiper-button-prev`,
+        nextEl: `#swiper-${producto.id} .swiper-button-next`,
+        prevEl: `#swiper-${producto.id} .swiper-button-prev`,
       },
     });
   });
@@ -100,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Agregar producto al mensaje de contacto
 function addToCart(event, productName) {
-  event.stopPropagation(); // Evita que el clic en el botón de carrito cierre el modal
+  event.stopPropagation(); // Evita conflictos con otros eventos
   const mensajeTextarea = document.querySelector("#contacto textarea");
   const textoActual = mensajeTextarea.value;
   const textoProducto = `Estoy interesado en el producto: ${productName}`;
