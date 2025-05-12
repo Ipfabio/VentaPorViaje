@@ -38,4 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     secciones[producto.categoria].appendChild(tarjeta);
   });
+
+  // Inicializar Swiper después de que las tarjetas se hayan generado
+  document.querySelectorAll('.producto-slider').forEach((slider) => {
+    new Swiper(`#${slider.id}`, {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loop: true, // Permite que el carrusel sea infinito
+    });
+  });
 });
