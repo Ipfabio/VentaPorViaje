@@ -140,7 +140,7 @@ const productos = [
     id: 13,
     categoria: "oficina",
     nombre: "Bolsa de Dormir",
-    precio: 40.000,
+    precio: 40000,
     descripcion: "Bolsa de dormir WaterDog Inca 200 Negra con forro Verde",
     imagenes: [
       "images/oficina/BolsaDeDormir/abierto.png",
@@ -186,7 +186,7 @@ const productos = [
     id: 17,
     categoria: "oficina",
     nombre: "CPU",
-    precio: 400.000,
+    precio: 400000,
     descripcion: "Gabinete con AMD A10-7800 Radeon R7, 12 Compute Cores 4 C + 8G, 3500 Mhz, 2 procesadores principales, 4 procesadores lógicos, Memoria física instalada (RAM) 16GB",
     imagenes: [
       "images/oficina/PC/Gabinete.png",
@@ -423,6 +423,98 @@ const productos = [
       "images/living/MesaRatonaC/frente.jpg",
       "images/living/MesaRatonaC/arriba.jpg",
       "images/living/MesaRatonaC/lado.jpg",
+    ]
+  },
+    {
+    id: 37,
+    categoria: "arte",
+    nombre: "Astrounauta",
+    precio: 45000,
+    descripcion: "Astrounauta de ceramica",
+    imagenes: [
+      "images/arte/astronauta.jpg",
+    ]
+  },
+    {
+    id: 38,
+    categoria: "arte",
+    nombre: "Jarrón",
+    precio: 20000,
+    descripcion: "Jarrón de cerámica",
+    imagenes: [
+      "images/arte/jarron.jpg",
+    ]
+  },
+    {
+    id: 39,
+    categoria: "arte",
+    nombre: "Velador",
+    precio: 30000,
+    descripcion: "Velador de cerámica",
+    imagenes: [
+      "images/arte/Velador.jpg",
+    ]
+  },
+    {
+    id: 40,
+    categoria: "arte",
+    nombre: "Gato Alicia",
+    precio: 50000,
+    descripcion: "Gato Alicia en el país de las maravillas de cerámica",
+    imagenes: [
+      "images/arte/GatoAlicia.jpg",
+    ]
+  },
+    {
+    id: 41,
+    categoria: "arte",
+    nombre: "Plato de Boca",
+    precio: 10000,
+    descripcion: "Plato de Boca Juniors de cerámica",
+    imagenes: [
+      "images/arte/platoBoca.jpg",
+    ]
+  },
+    {
+    id: 42,
+    categoria: "arte",
+    nombre: "Cuadro 'Puerto Madero'",
+    precio: 80000,
+    descripcion: "Cuadro de Puerto Madero pintado a mano",
+    imagenes: [
+      "images/arte/cuadroPuertoMadero.jpg",
+    ]
+  },
+    {
+    id: 43,
+    categoria: "arte",
+    nombre: "Cuadro pintado a mano",
+    precio: 100000,
+    descripcion: "Cuadro Pintado a Mano",
+    imagenes: [
+      "images/arte/cuadroPintado.jpg",
+    ]
+  },
+    {
+    id: 44,
+    categoria: "arte",
+    nombre: "Cuadro de los Simpsons",
+    precio: 10000,
+    descripcion: "Cuadro de los Simpsons precio unitario",
+    imagenes: [
+      "images/arte/cuadroSimpsons.jpg",
+      "images/arte/cuadroSimpsons2.jpg",
+    ]
+  },
+    {
+    id: 44,
+    categoria: "arte",
+    nombre: "Jarra Bird",
+    precio: 10000,
+    descripcion: "Cuadro de los Simpsons precio unitario",
+    imagenes: [
+      "images/arte/jarraBird.jpg",
+  
     ]
   },
 ];

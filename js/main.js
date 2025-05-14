@@ -1,14 +1,31 @@
 // public/js/main.js
 
 document.addEventListener('DOMContentLoaded', () => {
-  const secciones = {
-    cocina: document.querySelector("#cocina .grid"),
-    living: document.querySelector("#living .grid"),
-    oficina: document.querySelector("#oficina .grid"),
-    pieza: document.querySelector("#pieza .grid"),
-  };
+  const categorias = ['cocina', 'living', 'oficina', 'pieza', 'arte'];
 
-  productos.forEach((producto) => {
+  categorias.forEach(categoria => {
+    mostrarProductosPorCategoria(categoria, categoria);
+  });
+
+  // Inicializar Swiper después de que las tarjetas se hayan generado
+  setTimeout(() => {
+    document.querySelectorAll('.producto-slider').forEach((slider) => {
+      new Swiper(`#${slider.id}`, {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+      });
+    });
+  }, 100); // Espera breve para asegurar que el DOM esté actualizado
+});
+
+function mostrarProductosPorCategoria(categoria, contenedorId) {
+  const contenedor = document.querySelector(`#${contenedorId} .grid`);
+  if (!contenedor) return;
+  contenedor.innerHTML = '';
+  productos.filter(p => p.categoria === categoria).forEach(producto => {
     const tarjeta = document.createElement("div");
     tarjeta.classList.add("card");
     tarjeta.innerHTML = `
@@ -36,17 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
     `;
-    secciones[producto.categoria].appendChild(tarjeta);
+    contenedor.appendChild(tarjeta);
   });
-
-  // Inicializar Swiper después de que las tarjetas se hayan generado
-  document.querySelectorAll('.producto-slider').forEach((slider) => {
-    new Swiper(`#${slider.id}`, {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      loop: true, // Permite que el carrusel sea infinito
-    });
-  });
-});
+}
