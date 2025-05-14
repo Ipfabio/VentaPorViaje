@@ -41,7 +41,7 @@ const productos = [
     categoria: "cocina",
     nombre: "Lavarropas",
     precio: 500000,
-    descripcion: "Lavarropas automático Siam LSI-lf6510b2, Carga frontal, 6.6Kg, 1000rpm, 15 programas?, Blanco",
+    descripcion: "Lavarropas automático Siam LSI-lf6510b2, Carga frontal, 6.6Kg, 1000rpm, Blanco",
     imagenes: [
       "images/cocina/Lavarropas/frente.png",
       "images/cocina/Lavarropas/descripcion.png"
@@ -99,7 +99,7 @@ const productos = [
     categoria: "living",
     nombre: "Sillones Para el Balcon con Almohadon de regalo",
     precio: 60000,
-    descripcion: "Sillones Para el Balcon con Almohadon de regalo (*Agregar datos*)",
+    descripcion: "Sillones Para el Balcon con Almohadon de regalo",
     imagenes: [
       "images/living/SillonesParaElBalcón/frente.png",
       "images/living/SillonesParaElBalcón/lado.png",
@@ -110,7 +110,7 @@ const productos = [
     categoria: "living",
     nombre: "Sillon Sofa + Camastro",
     precio: 250000,
-    descripcion: "Sillon Sofa + Camastro de 3 cuerpos con almohadones (*Agregar medidas*)",
+    descripcion: "Sillon Sofa + Camastro de 3 cuerpos con almohadones",
     imagenes: [
       "images/living/SillonSofa+Camastro/lado.png",
     ]
@@ -198,7 +198,7 @@ const productos = [
     categoria: "oficina",
     nombre: "Pizzara Blanca",
     precio: 15000,
-    descripcion: "Pizzara Blanca para marcador (*agregar medidas*)",
+    descripcion: "Pizzara Blanca para marcador",
     imagenes: [
       "images/oficina/PizarraBlanca/PizarraBlanca.png",
     ]
@@ -220,7 +220,7 @@ const productos = [
     categoria: "oficina",
     nombre: "Soporte de Monitores",
     precio: 100000,
-    descripcion: "Sporte de Mesa de TV/Monitor de 10' a 30 Negro",
+    descripcion: "Sporte de Mesa de TV/Monitor de 10'' a 30'' Negro",
     imagenes: [
       "images/oficina/SoporteDeMonitores/frente.png",
       "images/oficina/SoporteDeMonitores/ejemplo.png",
@@ -277,7 +277,7 @@ const productos = [
     categoria: "pieza",
     nombre: "Mesa de Luz con Desayunador",
     precio: 80000,
-    descripcion: "Mesa de Luz con Desayunador Centro Estant Wengue 71cm x 42cm x 37cm (2 unidades) *Precio unitario?",
+    descripcion: "Mesa de Luz con Desayunador Centro Estant Wengue 71cm x 42cm x 37cm. Precio por 2 unidades. ",
     imagenes: [
       "images/pieza/MesaDeLuzConDesayunador/frente.png",
       "images/pieza/MesaDeLuzConDesayunador/abierto.png",
@@ -289,7 +289,7 @@ const productos = [
     categoria: "pieza",
     nombre: "Perfume One Million Paco Rabanne",
     precio: 85000,
-    descripcion: "Perfume One Million Paco Rabanne. *ml??*",
+    descripcion: "Perfume One Million Paco Rabanne.",
     imagenes: [
       "images/pieza/Perfume-OneMillion/oneMillion.png",
       "images/pieza/Perfume-OneMillion/oneMillion-2.png",
@@ -300,7 +300,7 @@ const productos = [
     categoria: "pieza",
     nombre: "Planchita Gama",
     precio: 20000,
-    descripcion: "Planchita Gama Tourmaline *Detalles*",
+    descripcion: "Planchita Gama Tourmaline",
     imagenes: [
       "images/pieza/planchita-gama/arriba.png",
       "images/pieza/planchita-gama/frente.png",
@@ -311,7 +311,7 @@ const productos = [
     categoria: "pieza",
     nombre: "Samsung S22",
     precio: 450000,
-    descripcion: "Smasung S22 *Detalles*",
+    descripcion: "Smasung S22",
     imagenes: [
       "images/pieza/samsung-s22/s22.png",
       "images/pieza/samsung-s22/s22-reverso.png",
@@ -357,7 +357,7 @@ const productos = [
     categoria: "pieza",
     nombre: "Xiaomi Mi9 SE",
     precio: 200000,
-    descripcion: "Xiaomi Mi9 SE *Detalles*",
+    descripcion: "Xiaomi Mi9 SE",
     imagenes: [
       "images/pieza/xiaomi-mi9-se/frente.png",
       "images/pieza/xiaomi-mi9-se/frente-2.png",
@@ -404,7 +404,7 @@ const productos = [
     {
     id: 35,
     categoria: "oficina",
-    nombre: "Escritorio 2 unidades",
+    nombre: "Escritorios Precio Unitario",
     precio: 100000,
     descripcion: "Escritorio de madera con patas de hierro 2 unidades",
     imagenes: [
@@ -432,7 +432,7 @@ const productos = [
     precio: 45000,
     descripcion: "Astrounauta de ceramica",
     imagenes: [
-      "images/arte/astronauta.jpg",
+      "images/arte/ceramica/astronauta.jpg",
     ]
   },
     {
@@ -442,7 +442,7 @@ const productos = [
     precio: 20000,
     descripcion: "Jarrón de cerámica",
     imagenes: [
-      "images/arte/jarron.jpg",
+      "images/arte/ceramica/jarron.jpg",
     ]
   },
     {
@@ -452,7 +452,8 @@ const productos = [
     precio: 30000,
     descripcion: "Velador de cerámica",
     imagenes: [
-      "images/arte/Velador.jpg",
+      "images/arte/ceramica/velador/Velador.jpg",
+      "images/arte/ceramica/velador/Velador2.jpg",
     ]
   },
     {
@@ -462,7 +463,7 @@ const productos = [
     precio: 50000,
     descripcion: "Gato Alicia en el país de las maravillas de cerámica",
     imagenes: [
-      "images/arte/GatoAlicia.jpg",
+      "images/arte/ceramica/GatoAlicia.jpg",
     ]
   },
     {
@@ -472,7 +473,7 @@ const productos = [
     precio: 10000,
     descripcion: "Plato de Boca Juniors de cerámica",
     imagenes: [
-      "images/arte/platoBoca.jpg",
+      "images/arte/ceramica/platoBoca.jpg",
     ]
   },
     {
@@ -482,7 +483,7 @@ const productos = [
     precio: 80000,
     descripcion: "Cuadro de Puerto Madero pintado a mano",
     imagenes: [
-      "images/arte/cuadroPuertoMadero.jpg",
+      "images/arte/cuadros/cuadroPuertoMadero.jpg",
     ]
   },
     {
@@ -492,7 +493,7 @@ const productos = [
     precio: 100000,
     descripcion: "Cuadro Pintado a Mano",
     imagenes: [
-      "images/arte/cuadroPintado.jpg",
+      "images/arte/cuadros/cuadroPintado.jpg",
     ]
   },
     {
@@ -500,21 +501,10 @@ const productos = [
     categoria: "arte",
     nombre: "Cuadro de los Simpsons",
     precio: 10000,
-    descripcion: "Cuadro de los Simpsons precio unitario",
+    descripcion: "Cuadro de los Simpsons precio por ambos",
     imagenes: [
-      "images/arte/cuadroSimpsons.jpg",
-      "images/arte/cuadroSimpsons2.jpg",
-    ]
-  },
-    {
-    id: 44,
-    categoria: "arte",
-    nombre: "Jarra Bird",
-    precio: 10000,
-    descripcion: "Cuadro de los Simpsons precio unitario",
-    imagenes: [
-      "images/arte/jarraBird.jpg",
-  
+      "images/arte/cuadros/cuadroSimpsons.jpg",
+      "images/arte/cuadros/cuadroSimpsons2.jpg",
     ]
   },
 ];
