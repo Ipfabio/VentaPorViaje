@@ -1,0 +1,95 @@
+<!-- ...existing code... -->
+  <main>
+    <!-- Cartel informativo -->
+    <div class="bg-yellow-100 text-yellow-800 text-sm p-4 rounded-md shadow-md mb-6 max-w-6xl mx-auto">
+      <p><strong>Nota:</strong> Imágenes ilustrativas. Por favor, comunicarse por los productos interesados y se enviarán imágenes actualizadas.</p>
+    </div>
+
+    <!-- Filtro por precio -->
+    <div class="max-w-6xl mx-auto px-4 mb-8 flex flex-col sm:flex-row items-center gap-4">
+      <label for="precioRange" class="font-medium text-gray-700">Filtrar por precio:</label>
+      <input type="range" id="precioRange" min="0" max="1500000" step="10000" value="1500000" class="w-full sm:w-1/2 accent-indigo-700">
+      <span id="precioRangeValue" class="ml-2 font-semibold text-indigo-700">$1.500.000</span>
+    </div>
+<!-- ...existing code... -->
+
+// ...existing code...
+let precioMaximo = 1500000; // Valor inicial del slider
+
+document.addEventListener('DOMContentLoaded', () => {
+  const categorias = ['cocina', 'living', 'oficina', 'pieza', 'arte'];
+
+  // Determinar el precio máximo real de los productos
+  const maxPrecio = Math.max(...productos.map(p => p.precio || 0), 1500000);
+  const precioRange = document.getElementById('precioRange');
+  const precioRangeValue = document.getElementById('precioRangeValue');
+  precioRange.max = maxPrecio;
+  precioRange.value = maxPrecio;
+  precioRangeValue.textContent = `$${Number(maxPrecio).toLocaleString()}`;
+  precioMaximo = maxPrecio;
+
+  // Renderizar productos inicialmente
+  categorias.forEach(categoria => {
+    mostrarProductosPorCategoria(categoria, categoria, precioMaximo);
+  });
+
+  // Slider de precio
+  precioRange.addEventListener('input', (e) => {
+    precioMaximo = Number(e.target.value);
+    precioRangeValue.textContent = `$${precioMaximo.toLocaleString()}`;
+    categorias.forEach(categoria => {
+      mostrarProductosPorCategoria(categoria, categoria, precioMaximo);
+    });
+  });
+
+  // Inicializar Swiper después de que las tarjetas se hayan generado
+  setTimeout(() => {
+    document.querySelectorAll('.producto-slider').forEach((slider) => {
+      new Swiper(`#${slider.id}`, {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+      });
+    });
+  }, 100);
+});
+
+function mostrarProductosPorCategoria(categoria, contenedorId, precioMax = 1500000) {
+  const contenedor = document.querySelector(`#${contenedorId} .grid`);
+  if (!contenedor) return;
+  contenedor.innerHTML = '';
+  productos
+    .filter(p => p.categoria === categoria && p.precio <= precioMax)
+    .forEach(producto => {
+      const tarjeta = document.createElement("div");
+      tarjeta.classList.add("card");
+      tarjeta.innerHTML = `
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group relative transform transition-transform duration-300">
+          <div class="relative w-full h-56 overflow-hidden">
+            <div class="swiper producto-slider" id="swiper-${producto.id}">
+              <div class="swiper-wrapper">
+                ${producto.imagenes.map(src => `
+                  <div class="swiper-slide">
+                    <img src="${src}" class="w-full h-full object-cover" alt="${producto.nombre}">
+                  </div>`).join('')}
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">${producto.nombre}</h3>
+            <div class="descripcion">
+              <p class="text-gray-600 text-sm">${producto.descripcion || "Sin descripción disponible"}</p>
+            </div>
+            <div class="precio">
+              <p class="text-indigo-700 font-bold text-xl">${producto.precio ? `$${producto.precio.toLocaleString()}` : "Precio no disponible"}</p>
+            </div>
+          </div>
+        </div>
+      `;
+      contenedor.appendChild(tarjeta);
+    });
+}

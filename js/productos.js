@@ -442,7 +442,7 @@ const productos = [
     precio: 20000,
     descripcion: "Jarrón de cerámica",
     imagenes: [
-      "images/arte/ceramica/jarron.jpg",
+      "images/arte/ceramica/Jarron.jpg",
     ]
   },
     {
