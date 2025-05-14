@@ -62,7 +62,7 @@ const productos = [
     id: 6,
     categoria: "living",
     nombre: "Aspiradora Robot Daewoo",
-    precio: 450000,
+    precio: 45000,
     descripcion: "Aspiradora Robot Daewoo Delta. Aspira, Treapeador Seco 350ml Color Negro.",
     imagenes: [
       "images/living/AspiradoraRobotDaewoo/AspiradoraRobotDaewoo.png",
@@ -129,7 +129,7 @@ const productos = [
     id: 12,
     categoria: "oficina",
     nombre: "Aricular Logitech h390",
-    precio: 50.000,
+    precio: 50000,
     descripcion: "Aricular Logitech h390 con mic USB (sin abrir)",
     imagenes: [
       "images/oficina/auriculares-logietch-h390-con-mic-usb/descripcion.png",
@@ -151,7 +151,7 @@ const productos = [
     id: 14,
     categoria: "oficina",
     nombre: "Estabilizador Forza",
-    precio: 32.000,
+    precio: 35000,
     descripcion: "Estabilizador de tensión Forza 3u. (Precio unitario)",
     imagenes: [
       "images/oficina/Estabilizador/frente.png",
@@ -161,7 +161,7 @@ const productos = [
   {
     id: 15,
     categoria: "oficina",
-    nombre: "Monitor Curvo",
+    nombre: "Monitor Curvo 27'",
     precio: 300000,
     descripcion: "Monitor Phillips 27' Curvo",
     imagenes: [
@@ -197,7 +197,7 @@ const productos = [
     id: 18,
     categoria: "oficina",
     nombre: "Pizzara Blanca",
-    precio: 15.000,
+    precio: 15000,
     descripcion: "Pizzara Blanca para marcador (*agregar medidas*)",
     imagenes: [
       "images/oficina/PizarraBlanca/PizarraBlanca.png",
@@ -207,7 +207,7 @@ const productos = [
     id: 19,
     categoria: "oficina",
     nombre: "Silla Gamer Corsair t3",
-    precio: 600.000,
+    precio: 600000,
     descripcion: "Silla gamer Corsar t3 Gris con almohadillas",
     imagenes: [
       "images/oficina/SillaGamerCorsair-t3/frente.png",
@@ -219,7 +219,7 @@ const productos = [
     id: 20,
     categoria: "oficina",
     nombre: "Soporte de Monitores",
-    precio: 100.000,
+    precio: 100000,
     descripcion: "Sporte de Mesa de TV/Monitor de 10' a 30 Negro",
     imagenes: [
       "images/oficina/SoporteDeMonitores/frente.png",
@@ -230,7 +230,7 @@ const productos = [
     id: 21,
     categoria: "oficina",
     nombre: "Video cámara JVC Everio",
-    precio: 350.000,
+    precio: 350000,
     descripcion: "Video cámara JVC Everio GZ-E200BU caja original (usado-nuevo)",
     imagenes: [
       "images/oficina/Videocámara-jvc-Everio/frente.png",
@@ -361,6 +361,68 @@ const productos = [
     imagenes: [
       "images/pieza/xiaomi-mi9-se/frente.png",
       "images/pieza/xiaomi-mi9-se/frente-2.png",
+    ]
+  },
+    {
+    id: 32,
+    categoria: "living",
+    nombre: "Mesa Ratona Moderna",
+    precio: 50000,
+    descripcion: "Mesa ratona moderna con centro melamina",
+    imagenes: [
+      "images/living/MesaRatonaModerna/arriba.jpg",
+      "images/living/MesaRatonaModerna/frente.jpg",
+      "images/living/MesaRatonaModerna/lado.jpg",
+      "images/living/MesaRatonaModerna/lado2.jpg",
+    ]
+  },
+    {
+    id: 33,
+    categoria: "pieza",
+    nombre: "Campera Zara",
+    precio: 150000,
+    descripcion: "Campera Zara color azul 'Denim Coulture' Hombre talle L sin uso",
+    imagenes: [
+      "images/pieza/ZaraAzul/atras.jpg",
+      "images/pieza/ZaraAzul/lado.jpg",
+      "images/pieza/ZaraAzul/frente.jpg",
+    ]
+  },
+    {
+    id: 34,
+    categoria: "pieza",
+    nombre: "Campera Zara",
+    precio: 150000,
+    descripcion: "Campera Zara color negro hombre talle L sin uso",
+    imagenes: [
+      "images/pieza/ZaraNegro/atras.jpg",
+      "images/pieza/ZaraNegro/lado.jpg",
+      "images/pieza/ZaraNegro/frente.jpg",
+      "images/pieza/ZaraNegro/pose.jpg",
+    ]
+  },
+    {
+    id: 35,
+    categoria: "oficina",
+    nombre: "Escritorio 2 unidades",
+    precio: 100000,
+    descripcion: "Escritorio de madera con patas de hierro 2 unidades",
+    imagenes: [
+      "images/oficina/Escritorios/frente.jpg",
+      "images/oficina/Escritorios/lado.jpg",
+      "images/oficina/Escritorios/delante.jpg",
+    ]
+  },
+    {
+    id: 36,
+    categoria: "living",
+    nombre: "Mesa Ratona Clásica",
+    precio: 40000,
+    descripcion: "Mesa Ratona Clásica de madera con vidrio",
+    imagenes: [
+      "images/living/MesaRatonaC/frente.jpg",
+      "images/living/MesaRatonaC/arriba.jpg",
+      "images/living/MesaRatonaC/lado.jpg",
     ]
   },
 ];
