@@ -253,3 +253,28 @@ footer {
 footer p {
   margin: 0;
 }
+
+/* Estilo para el banner de vendido */
+.vendido-banner {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg); /* Aplica la diagonal */
+  background: rgba(0,0,0,0.85);
+  color: #2563eb; /* azul-600 de Tailwind */
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 2.5rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+  pointer-events: none;
+  letter-spacing: 0.2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-shadow: none;
+}
+
+/* Blur para la imagen principal si está vendida */
+.img-blur {
+  filter: blur(3px) grayscale(0.2);
+  pointer-events: none;
+}

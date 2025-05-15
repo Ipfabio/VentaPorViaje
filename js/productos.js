@@ -270,7 +270,8 @@ const productos = [
       "images/pieza/Balanza-Xiaomi/BalanzaXiaomi.png",
       "images/pieza/Balanza-Xiaomi/BalanzaXiaomi-Reverso.png",
       "images/pieza/Balanza-Xiaomi/BalanzaXiaomi-Desripcion.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 25,
@@ -293,7 +294,8 @@ const productos = [
     imagenes: [
       "images/pieza/Perfume-OneMillion/oneMillion.png",
       "images/pieza/Perfume-OneMillion/oneMillion-2.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 27,

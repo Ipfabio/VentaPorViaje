@@ -26,6 +26,11 @@ function mostrarProductosPorCategoria(categoria, contenedorId) {
   if (!contenedor) return;
   contenedor.innerHTML = '';
   productos.filter(p => p.categoria === categoria).forEach(producto => {
+    const isVendido = producto.vendido === true;
+    const blurClass = isVendido ? 'blur-sm pointer-events-none' : '';
+    const vendidoBanner = isVendido
+      ? `<div class="vendido-banner">VENDIDO</div>`
+      : '';
     const tarjeta = document.createElement("div");
     tarjeta.classList.add("card");
     tarjeta.innerHTML = `
@@ -33,9 +38,10 @@ function mostrarProductosPorCategoria(categoria, contenedorId) {
         <div class="relative w-full h-56 overflow-hidden">
           <div class="swiper producto-slider" id="swiper-${producto.id}">
             <div class="swiper-wrapper">
-              ${producto.imagenes.map(src => `
-                <div class="swiper-slide">
-                  <img src="${src}" class="w-full h-full object-cover" alt="${producto.nombre}">
+              ${producto.imagenes.map((src, idx) => `
+                <div class="swiper-slide relative">
+                  <img src="${src}" class="w-full h-full object-cover ${idx === 0 && isVendido ? 'img-blur' : ''}" alt="${producto.nombre}">
+                  ${idx === 0 ? vendidoBanner : ''}
                 </div>`).join('')}
             </div>
             <div class="swiper-button-next"></div>
