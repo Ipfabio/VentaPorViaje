@@ -174,7 +174,7 @@ const productos = [
     categoria: "oficina",
     nombre: "Notebook Lenovo Thinkbook",
     precio: 1300000,
-    descripcion: "Notebook Lenovo Thinkbook 16GB, inte Core I3-13420h Intel Uhd Gaphics Full HD 1920 x 1200 32GB Ram, Ddr5, 1Tb SSD, Pcie Free Dos 16, color Artic Grey",
+    descripcion: "Notebook Lenovo Thinkbook 16GB, inte Core I5-13420h Intel Uhd Gaphics Full HD 1920 x 1200 32GB Ram, Ddr5, 1Tb SSD, Pcie Free Dos 16, color Artic Grey",
     imagenes: [
       "images/oficina/NotebookLenovoThinkbook/frente.png",
       "images/oficina/NotebookLenovoThinkbook/arriba.png",
