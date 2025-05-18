@@ -363,7 +363,8 @@ const productos = [
     imagenes: [
       "images/pieza/xiaomi-mi9-se/frente.png",
       "images/pieza/xiaomi-mi9-se/frente-2.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
     {
     id: 32,
