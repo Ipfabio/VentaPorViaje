@@ -510,4 +510,20 @@ const productos = [
       "images/arte/cuadros/cuadroSimpsons2.jpg",
     ]
   },
+   {
+    id: 45,
+    categoria: "arte",
+    nombre: "Cámara Panasonic Lumix DMC-FZ40 con bolso",
+    precio: 350000,
+    descripcion: "versátil con zoom óptico 24x, estabilización Power OIS y sensor de 14 MP para imágenes nítidas. Captura en RAW + JPEG y graba video HD con audio estéreo, ideal para fotografía y contenido multimedia. Pantalla LCD de 3”, visor electrónico y controles manuales",
+    imagenes: [
+      "images/arte/camara/frente_cerrado.jpg",
+      "images/arte/camara/frente_cargador.jpg",
+      "images/arte/camara/frente.jpg",
+      "images/arte/camara/lado1.jpg",
+      "images/arte/camara/botones.jpg",
+      "images/arte/camara/pantalla.jpg",
+      "images/arte/camara/bolso.jpg",
+    ]
+  },
 ];
