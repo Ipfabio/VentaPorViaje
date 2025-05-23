@@ -271,7 +271,7 @@ const productos = [
       "images/pieza/Balanza-Xiaomi/BalanzaXiaomi-Reverso.png",
       "images/pieza/Balanza-Xiaomi/BalanzaXiaomi-Desripcion.png",
     ],
-    vendido: true // Este producto está vendido
+    vendido: false // Este producto está vendido
   },
   {
     id: 25,
