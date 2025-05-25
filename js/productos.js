@@ -389,7 +389,8 @@ const productos = [
       "images/pieza/ZaraAzul/atras.jpg",
       "images/pieza/ZaraAzul/lado.jpg",
       "images/pieza/ZaraAzul/frente.jpg",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
     {
     id: 34,
