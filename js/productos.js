@@ -11,7 +11,8 @@ const productos = [
       "images/cocina/FreidoraDeAire/arriba.png",
       "images/cocina/FreidoraDeAire/frente.png",
       "images/cocina/FreidoraDeAire/ejemplo.png"
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 2,
