@@ -202,7 +202,8 @@ const productos = [
     descripcion: "Pizzara Blanca para marcador",
     imagenes: [
       "images/oficina/PizarraBlanca/PizarraBlanca.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido  
   },
   {
     id: 19,
