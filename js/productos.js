@@ -18,7 +18,7 @@ const productos = [
     id: 2,
     categoria: "cocina",
     nombre: "Licuadora",
-    precio: 150000,
+    precio: 115000,
     descripcion: "Licuadora Peabody PE-LN1200 1.5L con jarra de vidrio 220V",
     imagenes: [
       "images/cocina/Licuadora/Lejos.png",
@@ -41,7 +41,7 @@ const productos = [
     id: 4,
     categoria: "cocina",
     nombre: "Lavarropas",
-    precio: 500000,
+    precio: 300000,
     descripcion: "Lavarropas automático Siam LSI-lf6510b2, Carga frontal, 6.6Kg, 1000rpm, Blanco",
     imagenes: [
       "images/cocina/Lavarropas/frente.png",
@@ -89,7 +89,7 @@ const productos = [
     id: 8,
     categoria: "living",
     nombre: "Mueble De TV Rack",
-    precio: 60000,
+    precio: 50000,
     descripcion: "Mueble De TV Rack para TV Led de hasta 50' con 3 puertas",
     imagenes: [
       "images/living/MuebleDeTvRack/MuebleDeTvRack.png",
@@ -99,7 +99,7 @@ const productos = [
     id: 9,
     categoria: "living",
     nombre: "Sillones Para el Balcon con Almohadon de regalo",
-    precio: 60000,
+    precio: 30000,
     descripcion: "Sillones Para el Balcon con Almohadon de regalo",
     imagenes: [
       "images/living/SillonesParaElBalcón/frente.png",
@@ -129,9 +129,9 @@ const productos = [
   {
     id: 12,
     categoria: "oficina",
-    nombre: "Aricular Logitech h390",
-    precio: 50000,
-    descripcion: "Aricular Logitech h390 con mic USB (sin abrir)",
+    nombre: "Auricular Logitech h390",
+    precio: 30000,
+    descripcion: "Auricular Logitech h390 con mic USB (sin abrir)",
     imagenes: [
       "images/oficina/auriculares-logietch-h390-con-mic-usb/descripcion.png",
       "images/oficina/auriculares-logietch-h390-con-mic-usb/caja.png",
@@ -141,7 +141,7 @@ const productos = [
     id: 13,
     categoria: "oficina",
     nombre: "Bolsa de Dormir",
-    precio: 40000,
+    precio: 25000,
     descripcion: "Bolsa de dormir WaterDog Inca 200 Negra con forro Verde",
     imagenes: [
       "images/oficina/BolsaDeDormir/abierto.png",
@@ -152,7 +152,7 @@ const productos = [
     id: 14,
     categoria: "oficina",
     nombre: "Estabilizador Forza",
-    precio: 35000,
+    precio: 25000,
     descripcion: "Estabilizador de tensión Forza 3u. (Precio unitario)",
     imagenes: [
       "images/oficina/Estabilizador/frente.png",
@@ -163,7 +163,7 @@ const productos = [
     id: 15,
     categoria: "oficina",
     nombre: "Monitor Curvo 27'",
-    precio: 300000,
+    precio: 250000,
     descripcion: "Monitor Phillips 27' Curvo",
     imagenes: [
       "images/oficina/MonitorCurvo/frente.png",
@@ -174,7 +174,7 @@ const productos = [
     id: 16,
     categoria: "oficina",
     nombre: "Notebook Lenovo Thinkbook",
-    precio: 1300000,
+    precio: 1000000,
     descripcion: "Notebook Lenovo Thinkbook 16GB, inte Core I5-13420h Intel Uhd Gaphics Full HD 1920 x 1200 32GB Ram, Ddr5, 1Tb SSD, Pcie Free Dos 16, color Artic Grey",
     imagenes: [
       "images/oficina/NotebookLenovoThinkbook/frente.png",
@@ -187,7 +187,7 @@ const productos = [
     id: 17,
     categoria: "oficina",
     nombre: "CPU",
-    precio: 400000,
+    precio: 300000,
     descripcion: "Gabinete con AMD A10-7800 Radeon R7, 12 Compute Cores 4 C + 8G, 3500 Mhz, 2 procesadores principales, 4 procesadores lógicos, Memoria física instalada (RAM) 16GB",
     imagenes: [
       "images/oficina/PC/Gabinete.png",
@@ -209,7 +209,7 @@ const productos = [
     id: 19,
     categoria: "oficina",
     nombre: "Silla Gamer Corsair t3",
-    precio: 600000,
+    precio: 400000,
     descripcion: "Silla gamer Corsar t3 Gris con almohadillas",
     imagenes: [
       "images/oficina/SillaGamerCorsair-t3/frente.png",
@@ -221,7 +221,7 @@ const productos = [
     id: 20,
     categoria: "oficina",
     nombre: "Soporte de Monitores",
-    precio: 100000,
+    precio: 50000,
     descripcion: "Sporte de Mesa de TV/Monitor de 10'' a 30'' Negro",
     imagenes: [
       "images/oficina/SoporteDeMonitores/frente.png",
@@ -232,7 +232,7 @@ const productos = [
     id: 21,
     categoria: "oficina",
     nombre: "Video cámara JVC Everio",
-    precio: 350000,
+    precio: 150000,
     descripcion: "Video cámara JVC Everio GZ-E200BU caja original (usado-nuevo)",
     imagenes: [
       "images/oficina/Videocámara-jvc-Everio/frente.png",
@@ -279,7 +279,7 @@ const productos = [
     id: 25,
     categoria: "pieza",
     nombre: "Mesa de Luz con Desayunador",
-    precio: 80000,
+    precio: 50000,
     descripcion: "Mesa de Luz con Desayunador Centro Estant Wengue 71cm x 42cm x 37cm. Precio por 2 unidades. ",
     imagenes: [
       "images/pieza/MesaDeLuzConDesayunador/frente.png",
@@ -314,7 +314,7 @@ const productos = [
     id: 28,
     categoria: "pieza",
     nombre: "Samsung S22",
-    precio: 450000,
+    precio: 300000,
     descripcion: "Smasung S22",
     imagenes: [
       "images/pieza/samsung-s22/s22.png",
@@ -372,7 +372,7 @@ const productos = [
     id: 32,
     categoria: "living",
     nombre: "Mesa Ratona Moderna",
-    precio: 50000,
+    precio: 40000,
     descripcion: "Mesa ratona moderna con centro melamina",
     imagenes: [
       "images/living/MesaRatonaModerna/arriba.jpg",
@@ -411,7 +411,7 @@ const productos = [
     id: 35,
     categoria: "oficina",
     nombre: "Escritorios Precio Unitario",
-    precio: 100000,
+    precio: 80000,
     descripcion: "Escritorio de madera con patas de hierro 2 unidades",
     imagenes: [
       "images/oficina/Escritorios/frente.jpg",
@@ -423,7 +423,7 @@ const productos = [
     id: 36,
     categoria: "living",
     nombre: "Mesa Ratona Clásica",
-    precio: 40000,
+    precio: 30000,
     descripcion: "Mesa Ratona Clásica de madera con vidrio",
     imagenes: [
       "images/living/MesaRatonaC/frente.jpg",
