@@ -209,7 +209,7 @@ const productos = [
     id: 19,
     categoria: "oficina",
     nombre: "Silla Gamer Corsair t3",
-    precio: 400000,
+    precio: 300000,
     descripcion: "Silla gamer Corsar t3 Gris con almohadillas",
     imagenes: [
       "images/oficina/SillaGamerCorsair-t3/frente.png",
