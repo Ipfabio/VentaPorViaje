@@ -105,7 +105,8 @@ const productos = [
     imagenes: [
       "images/living/SillonesParaElBalcón/frente.png",
       "images/living/SillonesParaElBalcón/lado.png",
-    ]
+    ],
+    vendido: true
   },
   {
     id: 10,
@@ -309,7 +310,8 @@ const productos = [
     imagenes: [
       "images/pieza/planchita-gama/arriba.png",
       "images/pieza/planchita-gama/frente.png",
-    ]
+    ],
+    vendido: true
   },
   {
     id: 28,
