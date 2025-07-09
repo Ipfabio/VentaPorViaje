@@ -70,7 +70,8 @@ const productos = [
       "images/living/AspiradoraRobotDaewoo/TapaAbierta.png",
       "images/living/AspiradoraRobotDaewoo/Reverso.png",
       "images/living/AspiradoraRobotDaewoo/Descripción.png",
-    ]
+    ],
+    vendido: true
   },
   {
     id: 7,
