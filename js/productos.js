@@ -334,7 +334,8 @@ const productos = [
       "images/pieza/secador-de-pelo-gama/sola.png",
       "images/pieza/secador-de-pelo-gama/caja.png",
       "images/pieza/secador-de-pelo-gama/frente.png",
-    ]
+    ],
+    vendido: true
   },
   {
     id: 29,
