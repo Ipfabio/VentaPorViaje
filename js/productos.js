@@ -346,7 +346,8 @@ const productos = [
     imagenes: [
       "images/pieza/Sommier/sommier-1.png",
       "images/pieza/Sommier/sommier-2.png",
-    ]
+    ],
+    vendido: true
   },
   {
     id: 30,
