@@ -46,7 +46,8 @@ const productos = [
     imagenes: [
       "images/cocina/Lavarropas/frente.png",
       "images/cocina/Lavarropas/descripcion.png"
-    ]
+    ],
+    vendido: true
   },
   {
     id: 5,
@@ -94,7 +95,8 @@ const productos = [
     descripcion: "Mueble De TV Rack para TV Led de hasta 50' con 3 puertas",
     imagenes: [
       "images/living/MuebleDeTvRack/MuebleDeTvRack.png",
-    ]
+    ],
+    vendido: true
   },
   {
     id: 9,
@@ -126,7 +128,8 @@ const productos = [
     descripcion: "Tv Sanyo Lce 32 Pulgadas led con 80cm de visión (usado)",
     imagenes: [
       "images/living/TvSanyoLce32pulgadas/Frente.png",
-    ]
+    ],
+    vendido: true
   },
   {
     id: 12,
