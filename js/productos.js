@@ -220,7 +220,8 @@ const productos = [
       "images/oficina/SillaGamerCorsair-t3/frente.png",
       "images/oficina/SillaGamerCorsair-t3/brazos.png",
       "images/oficina/SillaGamerCorsair-t3/detalles.png",
-    ]
+    ],
+    vendido: true
   },
     {
     id: 20,
