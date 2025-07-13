@@ -186,7 +186,8 @@ const productos = [
       "images/oficina/NotebookLenovoThinkbook/arriba.png",
       "images/oficina/NotebookLenovoThinkbook/lado1.png",
       "images/oficina/NotebookLenovoThinkbook/lado2.png",
-    ]
+    ],
+    vendido: true
   },
   {
     id: 17,
@@ -197,7 +198,8 @@ const productos = [
     imagenes: [
       "images/oficina/PC/Gabinete.png",
       "images/oficina/PC/CPU.png",
-    ]
+    ],
+    vendido: true
   },
   {
     id: 18,
