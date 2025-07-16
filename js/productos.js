@@ -256,7 +256,8 @@ const productos = [
     imagenes: [
       "images/pieza/Acolchado-Gold-3-piezas/estirado.png",
       "images/pieza/Acolchado-Gold-3-piezas/cerrado.png",
-    ]
+    ],
+    vendido: true 
   },
   {
     id: 23,
@@ -268,7 +269,8 @@ const productos = [
       "images/pieza/Acolchado-King-Size-Corderito/estirado.png",
       "images/pieza/Acolchado-King-Size-Corderito/textura.png",
       "images/pieza/Acolchado-King-Size-Corderito/doblado.png",
-    ]
+    ],
+    vendido: true 
   },
   {
     id: 24,
