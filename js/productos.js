@@ -35,7 +35,8 @@ const productos = [
       "images/cocina/microondas/frente.png",
       "images/cocina/microondas/abierto.png",
       "images/cocina/microondas/botonera.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 4,
@@ -58,7 +59,8 @@ const productos = [
     imagenes: [
       "images/living/AireAcondicionadoSplit/AireAcondicionadoSplit.png",
       "images/living/AireAcondicionadoSplit/AireAcondicionadoSplit-2.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 6,
@@ -173,7 +175,8 @@ const productos = [
     imagenes: [
       "images/oficina/MonitorCurvo/frente.png",
       "images/oficina/MonitorCurvo/lado.webp",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 16,
@@ -234,7 +237,8 @@ const productos = [
     imagenes: [
       "images/oficina/SoporteDeMonitores/frente.png",
       "images/oficina/SoporteDeMonitores/ejemplo.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 21,
@@ -330,7 +334,8 @@ const productos = [
     imagenes: [
       "images/pieza/samsung-s22/s22.png",
       "images/pieza/samsung-s22/s22-reverso.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 28,
