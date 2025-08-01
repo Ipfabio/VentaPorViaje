@@ -98,7 +98,7 @@ const productos = [
     imagenes: [
       "images/living/MuebleDeTvRack/MuebleDeTvRack.png",
     ],
-    vendido: true
+    vendido: false
   },
   {
     id: 9,
@@ -226,7 +226,7 @@ const productos = [
       "images/oficina/SillaGamerCorsair-t3/brazos.png",
       "images/oficina/SillaGamerCorsair-t3/detalles.png",
     ],
-    vendido: false
+    vendido: true
   },
     {
     id: 20,
