@@ -23,7 +23,8 @@ const productos = [
     imagenes: [
       "images/cocina/Licuadora/Lejos.png",
       "images/cocina/Licuadora/arriba.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
     {
     id: 3,
@@ -36,7 +37,7 @@ const productos = [
       "images/cocina/microondas/abierto.png",
       "images/cocina/microondas/botonera.png",
     ],
-    vendido: true // Este producto está vendido
+    vendido: false // Este producto está vendido
   },
   {
     id: 4,
@@ -120,7 +121,8 @@ const productos = [
     descripcion: "Sillon Sofa + Camastro de 3 cuerpos con almohadones",
     imagenes: [
       "images/living/SillonSofa+Camastro/lado.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 11,
@@ -299,7 +301,8 @@ const productos = [
       "images/pieza/MesaDeLuzConDesayunador/frente.png",
       "images/pieza/MesaDeLuzConDesayunador/abierto.png",
       "images/pieza/MesaDeLuzConDesayunador/medidas.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 26,
@@ -372,7 +375,8 @@ const productos = [
       "images/pieza/Tv-Philips/frente.png",
       "images/pieza/Tv-Philips/dorso.png",
       "images/pieza/Tv-Philips/control.png",
-    ]
+    ],
+    vendido: true // Este producto está vendido
   },
   {
     id: 31,
@@ -435,7 +439,8 @@ const productos = [
       "images/oficina/Escritorios/frente.jpg",
       "images/oficina/Escritorios/lado.jpg",
       "images/oficina/Escritorios/delante.jpg",
-    ]
+    ],
+    vendido: true
   },
     {
     id: 36,
