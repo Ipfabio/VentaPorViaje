@@ -427,7 +427,8 @@ const productos = [
       "images/pieza/ZaraNegro/lado.jpg",
       "images/pieza/ZaraNegro/frente.jpg",
       "images/pieza/ZaraNegro/pose.jpg",
-    ]
+    ],
+    vendido: true
   },
     {
     id: 35,
